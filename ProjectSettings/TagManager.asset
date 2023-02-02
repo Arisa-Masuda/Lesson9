@@ -8,6 +8,7 @@ TagManager:
   - LargeFlake
   - SnowBall
   - Ground
+  - Spike
   layers:
   - Default
   - TransparentFX

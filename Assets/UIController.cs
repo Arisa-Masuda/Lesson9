@@ -64,7 +64,7 @@ public class UIController : MonoBehaviour
         this.isGameOver = true;
     }
 
-    //ペンギンが衝突した時に呼ばれる関数
+    //スコアを計算するときに呼ばれる関数
     public void ScoreCount(string getTag)
     {
         //変数の初期化
@@ -86,6 +86,10 @@ public class UIController : MonoBehaviour
         else if (targettag == "SnowBall")
         {
             addscore = -10;
+        }
+        else if (targettag == "Spike")
+        {
+            addscore = -5;
         }
 
         //合計得点に追加得点を加算する
